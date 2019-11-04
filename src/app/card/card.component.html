@@ -1,0 +1,53 @@
+<script src="./assets/js/pay.js"></script>
+<script src="../assets/js/now.js"></script>
+<script src="../assets/js/sam.js"></script>
+
+<div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-auto ">
+<div id="pay-invoice" class="card">
+<div class="card-body bg-light" >
+<div class="card-title bg-white">
+<div class="paynow_error"></div>
+<form action="" name="pay" onsubmit="return PayNowvalid()">
+<div class="form-group">
+<h3 class="text-center text-primary" >Credit Card Payment</h3><hr>
+<label for="payment" class="control-label mb-1">Payment amount</label>
+<input type="text" name="payment"  class="form-control" required autocomplete="off">
+</div>
+<div class="form-group has-success">
+<label for="name" class="control-label mb-1">Name on card Holder</label>
+<input type="text" name="name"  class="form-control" required autocomplete="off">
+</div>                                                                   
+<div class="form-group">
+<label for="number" class="control-label mb-1">Card number</label>
+<input type="tel" name="number"  class="form-control" maxlength="16" inputmode="numeric" pattern="\d*" required="">
+</div>
+<div class="row">
+<div class="col-6">
+<div class="form-group">
+<label for="exp" class="control-label mb-1">Expiration</label>
+<input type="tel"  name="exp" maxlength="2" class="form-control"  required  placeholder="MM" style="width:70px "/> 
+<input type="tel"  name="exp" maxlength="2" class="form-control"  required  placeholder="YY" style="width:70px "/> 
+</div>
+</div>
+<div class="col-6">
+<label for="code" class="control-label mb-1">CVV Code</label>
+<div class="input-group">
+<input type="password" name="code"  maxlength="3"  id="myInput" class="form-control" required  autocomplete="off"> 
+<div class="input-group-append">
+<div class="input-group-text">
+<a href="#" data-toggle="tooltip" style="color: red" title="! It’s a 3- or 4- digit code usually found on the front or back of your card."> ? </a>
+
+</div>
+</div>
+</div>
+        
+
+</div>
+</div>
+        
+<button id="payment-button" type="submit"  class="btn btn-lg btn-primary btn-block">
+<i class="fa fa-lock fa-lg"></i>&nbsp;
+<span id="payment-button-amount">Pay Now</span>
+<span id="payment-button-sending" style="display:none">Sending…</span>
+</button>
+        

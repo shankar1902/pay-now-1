@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+<body>
+<div class="content" >
+<div class="container-fluid py-3">
+<div class="row">
+<div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-auto ">
+<div id="pay-invoice" class="card">
+<div class="card-body bg-light">
+<div class="card-title">
+<h3 class="text-center">Payment Details</h3>
+</div>
+<div class="form-group">
+<nav class="navbar navbar-expand-sm">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link " [routerLink]="['/']"><i class="text-primary btn btn-outline-secondary fab fa-cc-visa 2x" style="font-size:100%"></i>credit Card</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" [routerLink]="['/net']"><i class="text-primary btn btn-outline-secondary fas fa-university 2x"style="font-size:100%"></i>Net Banking</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" [routerLink]="['/pay']"><i class="text-primary btn btn-outline-secondary fab fa-cc-paypal 2x"style="font-size:100%"></i>Paypal Banking</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" [routerLink]="['/debit']"><i class="text-primary btn btn-outline-secondary fab fa-google-wallet 2x"style="font-size:100%"></i>Wallet Banking</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
